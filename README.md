@@ -1,5 +1,16 @@
 # OpenPano
+## docker运行
 
+1. 构建 `docker build -t openpano:v1 .`
+
+2. 挂载本地路径 `docker run -dt --name openpano --mount type=bind,source=F:\mount,target=/usr/src/app/data openpano:v1`
+	![image](https://user-images.githubusercontent.com/14978325/118252831-c754e800-b4db-11eb-96ee-c3a8002e00e8.png)
+
+3. 执行 `docker exec -it openpano  /usr/src/app/src/image-stitching <outfile> <file1> <file2> <file3> ...`
+
+
+
+==============================================================
 ![cmu0](results/CMU0-all.jpg)
 
 ## Introduction
